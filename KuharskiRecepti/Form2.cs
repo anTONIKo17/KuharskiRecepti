@@ -13,7 +13,6 @@ namespace KuharskiRecepti
 {
     public partial class Form2 : Form
     {
-        string path = "registracija.txt";
         public Form2()
         {
             InitializeComponent();
@@ -31,15 +30,20 @@ namespace KuharskiRecepti
             {
                 MessageBox.Show("Lozinka sadrži manje od 8 znakova!");
             }
+            if(textBoxLozinka.Text!=textBoxPotvrdiLozinku.Text)
+            {
+                MessageBox.Show("Lozinka i potvrda lozinke se ne podudaraju!");
+            }
             if(textBoxIme.Text==""||textBoxPrezime.Text==""||textBoxKorisnickoIme.Text==""||textBoxLozinka.Text==""||textBoxPotvrdiLozinku.Text=="")
             {
                 MessageBox.Show("Nisu upisani svi traženi podatci!");
             }
             else
-            {
-                string linija = textBoxIme.Text + "|" + textBoxPrezime.Text + "|" + textBoxKorisnickoIme.Text + "|" + textBoxLozinka.Text + "|" + textBoxPotvrdiLozinku.Text;
-                StreamWriter sw = new StreamWriter(path, true);
-                sw.WriteLine(linija);
+            {  
+
+                string linija2 = textBoxIme.Text + "|" + textBoxPrezime.Text + "|" + textBoxKorisnickoIme.Text + "|" + textBoxLozinka.Text;
+                StreamWriter sw = new StreamWriter("registracija.txt");
+                sw.WriteLine(linija2);
                 textBoxIme.Text = "";
                 textBoxPrezime.Text = "";
                 textBoxKorisnickoIme.Text = "";
@@ -47,7 +51,14 @@ namespace KuharskiRecepti
                 textBoxPotvrdiLozinku.Text = "";
                 MessageBox.Show("Podatci su spremljeni!");
                 sw.Close();
+                Form3 Form3 = new Form3();
+                Form3.ShowDialog();
             }
+        }
+
+        private void buttonZatvori2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

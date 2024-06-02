@@ -49,5 +49,10 @@ namespace KuharskiRecepti
         {
             MessageBox.Show("Kreatori su dvoje jako vrijednih, pametnih i marljivih ljudi koji su uložili puno truda u izradi ove aplikacije.\nOni su učenici 3.c razreda III. gimnazije, Split");
         }
+
+        private void buttonZatvori1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

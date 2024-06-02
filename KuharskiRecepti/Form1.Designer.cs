@@ -38,6 +38,7 @@
             this.oKreatorimaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomoćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelNaziv = new System.Windows.Forms.Label();
+            this.buttonZatvori1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +105,7 @@
             // oKreatorimaToolStripMenuItem
             // 
             this.oKreatorimaToolStripMenuItem.Name = "oKreatorimaToolStripMenuItem";
-            this.oKreatorimaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oKreatorimaToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.oKreatorimaToolStripMenuItem.Text = "O kreatorima";
             this.oKreatorimaToolStripMenuItem.Click += new System.EventHandler(this.oKreatorimaToolStripMenuItem_Click);
             // 
@@ -124,11 +125,23 @@
             this.labelNaziv.TabIndex = 2;
             this.labelNaziv.Text = "Moji kuharski recepti";
             // 
+            // buttonZatvori1
+            // 
+            this.buttonZatvori1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonZatvori1.Location = new System.Drawing.Point(705, 440);
+            this.buttonZatvori1.Name = "buttonZatvori1";
+            this.buttonZatvori1.Size = new System.Drawing.Size(98, 30);
+            this.buttonZatvori1.TabIndex = 4;
+            this.buttonZatvori1.Text = "Zatvori";
+            this.buttonZatvori1.UseVisualStyleBackColor = true;
+            this.buttonZatvori1.Click += new System.EventHandler(this.buttonZatvori1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 501);
+            this.Controls.Add(this.buttonZatvori1);
             this.Controls.Add(this.labelNaziv);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -154,6 +167,7 @@
         private System.Windows.Forms.ToolStripMenuItem oKreatorimaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pomoćToolStripMenuItem;
         private System.Windows.Forms.Label labelNaziv;
+        private System.Windows.Forms.Button buttonZatvori1;
     }
 }
 
