@@ -41,7 +41,17 @@
             this.labelUpisKorisnicko = new System.Windows.Forms.Label();
             this.groupBoxPromjenaLozinke = new System.Windows.Forms.GroupBox();
             this.buttomZatvori3 = new System.Windows.Forms.Button();
+            this.labelLozinkaUpisi = new System.Windows.Forms.Label();
+            this.labelNovaLozinka = new System.Windows.Forms.Label();
+            this.labelPotvrdiNovu = new System.Windows.Forms.Label();
+            this.textBoxSadasnjaLozinka = new System.Windows.Forms.TextBox();
+            this.textBoxPotvrdiNovu = new System.Windows.Forms.TextBox();
+            this.textBoxNovaLozinka = new System.Windows.Forms.TextBox();
+            this.buttonPromijeniLozinku = new System.Windows.Forms.Button();
+            this.labelPromjenaKorisnicko = new System.Windows.Forms.Label();
+            this.textBoxPromjenaKorisnicko = new System.Windows.Forms.TextBox();
             this.groupBoxPrijava.SuspendLayout();
+            this.groupBoxPromjenaLozinke.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelPrijava
@@ -150,9 +160,18 @@
             // 
             // groupBoxPromjenaLozinke
             // 
+            this.groupBoxPromjenaLozinke.Controls.Add(this.textBoxPromjenaKorisnicko);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.labelPromjenaKorisnicko);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.buttonPromijeniLozinku);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.textBoxNovaLozinka);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.textBoxPotvrdiNovu);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.textBoxSadasnjaLozinka);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.labelPotvrdiNovu);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.labelNovaLozinka);
+            this.groupBoxPromjenaLozinke.Controls.Add(this.labelLozinkaUpisi);
             this.groupBoxPromjenaLozinke.Location = new System.Drawing.Point(451, 241);
             this.groupBoxPromjenaLozinke.Name = "groupBoxPromjenaLozinke";
-            this.groupBoxPromjenaLozinke.Size = new System.Drawing.Size(351, 223);
+            this.groupBoxPromjenaLozinke.Size = new System.Drawing.Size(351, 248);
             this.groupBoxPromjenaLozinke.TabIndex = 5;
             this.groupBoxPromjenaLozinke.TabStop = false;
             this.groupBoxPromjenaLozinke.Text = "Promjena lozinke";
@@ -168,6 +187,89 @@
             this.buttomZatvori3.Text = "Zatvori";
             this.buttomZatvori3.UseVisualStyleBackColor = true;
             this.buttomZatvori3.Click += new System.EventHandler(this.buttomZatvori3_Click);
+            // 
+            // labelLozinkaUpisi
+            // 
+            this.labelLozinkaUpisi.AutoSize = true;
+            this.labelLozinkaUpisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLozinkaUpisi.Location = new System.Drawing.Point(32, 80);
+            this.labelLozinkaUpisi.Name = "labelLozinkaUpisi";
+            this.labelLozinkaUpisi.Size = new System.Drawing.Size(124, 18);
+            this.labelLozinkaUpisi.TabIndex = 0;
+            this.labelLozinkaUpisi.Text = "Sadašnja lozinka:";
+            // 
+            // labelNovaLozinka
+            // 
+            this.labelNovaLozinka.AutoSize = true;
+            this.labelNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNovaLozinka.Location = new System.Drawing.Point(32, 114);
+            this.labelNovaLozinka.Name = "labelNovaLozinka";
+            this.labelNovaLozinka.Size = new System.Drawing.Size(98, 18);
+            this.labelNovaLozinka.TabIndex = 1;
+            this.labelNovaLozinka.Text = "Nova lozinka:";
+            // 
+            // labelPotvrdiNovu
+            // 
+            this.labelPotvrdiNovu.AutoSize = true;
+            this.labelPotvrdiNovu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPotvrdiNovu.Location = new System.Drawing.Point(32, 152);
+            this.labelPotvrdiNovu.Name = "labelPotvrdiNovu";
+            this.labelPotvrdiNovu.Size = new System.Drawing.Size(145, 18);
+            this.labelPotvrdiNovu.TabIndex = 2;
+            this.labelPotvrdiNovu.Text = "Potvrdi novu lozinku:";
+            // 
+            // textBoxSadasnjaLozinka
+            // 
+            this.textBoxSadasnjaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSadasnjaLozinka.Location = new System.Drawing.Point(179, 74);
+            this.textBoxSadasnjaLozinka.Name = "textBoxSadasnjaLozinka";
+            this.textBoxSadasnjaLozinka.Size = new System.Drawing.Size(100, 24);
+            this.textBoxSadasnjaLozinka.TabIndex = 3;
+            // 
+            // textBoxPotvrdiNovu
+            // 
+            this.textBoxPotvrdiNovu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPotvrdiNovu.Location = new System.Drawing.Point(179, 146);
+            this.textBoxPotvrdiNovu.Name = "textBoxPotvrdiNovu";
+            this.textBoxPotvrdiNovu.Size = new System.Drawing.Size(100, 24);
+            this.textBoxPotvrdiNovu.TabIndex = 4;
+            // 
+            // textBoxNovaLozinka
+            // 
+            this.textBoxNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNovaLozinka.Location = new System.Drawing.Point(179, 108);
+            this.textBoxNovaLozinka.Name = "textBoxNovaLozinka";
+            this.textBoxNovaLozinka.Size = new System.Drawing.Size(100, 24);
+            this.textBoxNovaLozinka.TabIndex = 5;
+            // 
+            // buttonPromijeniLozinku
+            // 
+            this.buttonPromijeniLozinku.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPromijeniLozinku.Location = new System.Drawing.Point(112, 191);
+            this.buttonPromijeniLozinku.Name = "buttonPromijeniLozinku";
+            this.buttonPromijeniLozinku.Size = new System.Drawing.Size(110, 43);
+            this.buttonPromijeniLozinku.TabIndex = 6;
+            this.buttonPromijeniLozinku.Text = "Promijeni";
+            this.buttonPromijeniLozinku.UseVisualStyleBackColor = true;
+            this.buttonPromijeniLozinku.Click += new System.EventHandler(this.buttonPromijeniLozinku_Click);
+            // 
+            // labelPromjenaKorisnicko
+            // 
+            this.labelPromjenaKorisnicko.AutoSize = true;
+            this.labelPromjenaKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPromjenaKorisnicko.Location = new System.Drawing.Point(32, 40);
+            this.labelPromjenaKorisnicko.Name = "labelPromjenaKorisnicko";
+            this.labelPromjenaKorisnicko.Size = new System.Drawing.Size(111, 18);
+            this.labelPromjenaKorisnicko.TabIndex = 7;
+            this.labelPromjenaKorisnicko.Text = "Korisničko ime:";
+            // 
+            // textBoxPromjenaKorisnicko
+            // 
+            this.textBoxPromjenaKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPromjenaKorisnicko.Location = new System.Drawing.Point(179, 34);
+            this.textBoxPromjenaKorisnicko.Name = "textBoxPromjenaKorisnicko";
+            this.textBoxPromjenaKorisnicko.Size = new System.Drawing.Size(100, 24);
+            this.textBoxPromjenaKorisnicko.TabIndex = 8;
             // 
             // Form3
             // 
@@ -186,6 +288,8 @@
             this.Text = "Form3";
             this.groupBoxPrijava.ResumeLayout(false);
             this.groupBoxPrijava.PerformLayout();
+            this.groupBoxPromjenaLozinke.ResumeLayout(false);
+            this.groupBoxPromjenaLozinke.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +309,14 @@
         private System.Windows.Forms.Label labelUpisKorisnicko;
         private System.Windows.Forms.Button buttonPrijaviSe;
         private System.Windows.Forms.Button buttomZatvori3;
+        private System.Windows.Forms.Button buttonPromijeniLozinku;
+        private System.Windows.Forms.TextBox textBoxNovaLozinka;
+        private System.Windows.Forms.TextBox textBoxPotvrdiNovu;
+        private System.Windows.Forms.TextBox textBoxSadasnjaLozinka;
+        private System.Windows.Forms.Label labelPotvrdiNovu;
+        private System.Windows.Forms.Label labelNovaLozinka;
+        private System.Windows.Forms.Label labelLozinkaUpisi;
+        private System.Windows.Forms.TextBox textBoxPromjenaKorisnicko;
+        private System.Windows.Forms.Label labelPromjenaKorisnicko;
     }
 }

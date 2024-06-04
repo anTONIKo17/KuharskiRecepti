@@ -13,6 +13,7 @@ namespace KuharskiRecepti
 {
     public partial class Form3 : Form
     {
+        string path = "registracija.txt";
         public Form3()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace KuharskiRecepti
             }
             else
             {
-                StreamReader sr = new StreamReader("registracija.txt");
+                StreamReader sr = new StreamReader(path);
                 string linija = sr.ReadLine();
                 while(linija != null)
                 {
@@ -64,6 +65,26 @@ namespace KuharskiRecepti
         private void buttomZatvori3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonPromijeniLozinku_Click(object sender, EventArgs e)
+        {
+            if(textBoxPromjenaKorisnicko.Text==""||textBoxSadasnjaLozinka.Text==""||textBoxNovaLozinka.Text==""||textBoxPotvrdiNovu.Text=="")
+            {
+                MessageBox.Show("Nisu uneseni svi potrebni podatci!");
+            }
+            if (textBoxNovaLozinka.Text.ToCharArray().Count() < 8)
+            {
+                MessageBox.Show("Lozinka sadrži manje od 8 znakova!");
+            }
+            if (textBoxNovaLozinka.Text != textBoxPotvrdiNovu.Text)
+            {
+                MessageBox.Show("Nova lozinka i potvrda nove lozinke se ne podudaraju!");
+            }
+            else
+            {
+
+            }
         }
     }
 }
