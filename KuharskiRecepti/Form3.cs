@@ -47,6 +47,7 @@ namespace KuharskiRecepti
                         textBoxUpisLozinka.Text = "";
                         Form4 Form4 = new Form4();
                         Form4.ShowDialog();
+                        this.Close();
                         break;
                     }
                     linija = sr.ReadLine();

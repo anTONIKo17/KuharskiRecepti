@@ -39,20 +39,20 @@ namespace KuharskiRecepti
                 MessageBox.Show("Nisu upisani svi traženi podatci!");
             }
             else
-            {  
-
-                string linija2 = textBoxIme.Text + "|" + textBoxPrezime.Text + "|" + textBoxKorisnickoIme.Text + "|" + textBoxLozinka.Text;
-                StreamWriter sw = new StreamWriter("registracija.txt");
-                sw.WriteLine(linija2);
-                textBoxIme.Text = "";
-                textBoxPrezime.Text = "";
-                textBoxKorisnickoIme.Text = "";
-                textBoxLozinka.Text = "";
-                textBoxPotvrdiLozinku.Text = "";
-                MessageBox.Show("Podatci su spremljeni!");
-                sw.Close();
-                Form3 Form3 = new Form3();
-                Form3.ShowDialog();
+            {
+                    string linija2 = textBoxIme.Text + "|" + textBoxPrezime.Text + "|" + textBoxKorisnickoIme.Text + "|" + textBoxLozinka.Text;
+                    StreamWriter sw = new StreamWriter("registracija.txt");
+                    sw.WriteLine(linija2);
+                    textBoxIme.Text = "";
+                    textBoxPrezime.Text = "";
+                    textBoxKorisnickoIme.Text = "";
+                    textBoxLozinka.Text = "";
+                    textBoxPotvrdiLozinku.Text = "";
+                    MessageBox.Show("Podatci su spremljeni!");
+                    sw.Close();
+                    Form3 Form3 = new Form3();
+                    Form3.ShowDialog();
+                    this.Close();
             }
         }
 
