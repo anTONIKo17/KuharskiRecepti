@@ -57,32 +57,30 @@
             // labelPrijava
             // 
             this.labelPrijava.AutoSize = true;
-            this.labelPrijava.Font = new System.Drawing.Font("Gabriola", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrijava.Location = new System.Drawing.Point(112, 37);
-            this.labelPrijava.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPrijava.Font = new System.Drawing.Font("Gabriola", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPrijava.Location = new System.Drawing.Point(84, 30);
             this.labelPrijava.Name = "labelPrijava";
-            this.labelPrijava.Size = new System.Drawing.Size(230, 147);
+            this.labelPrijava.Size = new System.Drawing.Size(189, 118);
             this.labelPrijava.TabIndex = 0;
             this.labelPrijava.Text = "Prijava";
+            this.labelPrijava.Click += new System.EventHandler(this.labelPrijava_Click);
             // 
             // labelPromijeniLozinku
             // 
             this.labelPromijeniLozinku.AutoSize = true;
-            this.labelPromijeniLozinku.Font = new System.Drawing.Font("Gabriola", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPromijeniLozinku.Location = new System.Drawing.Point(575, 37);
-            this.labelPromijeniLozinku.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPromijeniLozinku.Font = new System.Drawing.Font("Gabriola", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPromijeniLozinku.Location = new System.Drawing.Point(431, 30);
             this.labelPromijeniLozinku.Name = "labelPromijeniLozinku";
-            this.labelPromijeniLozinku.Size = new System.Drawing.Size(495, 147);
+            this.labelPromijeniLozinku.Size = new System.Drawing.Size(407, 118);
             this.labelPromijeniLozinku.TabIndex = 1;
             this.labelPromijeniLozinku.Text = "Promijeni lozinku";
             // 
             // buttonPrijava
             // 
             this.buttonPrijava.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrijava.Location = new System.Drawing.Point(139, 218);
-            this.buttonPrijava.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPrijava.Location = new System.Drawing.Point(104, 177);
             this.buttonPrijava.Name = "buttonPrijava";
-            this.buttonPrijava.Size = new System.Drawing.Size(193, 50);
+            this.buttonPrijava.Size = new System.Drawing.Size(145, 41);
             this.buttonPrijava.TabIndex = 2;
             this.buttonPrijava.Text = "Započni prijavu";
             this.buttonPrijava.UseVisualStyleBackColor = true;
@@ -91,10 +89,9 @@
             // buttonZapocniPromjenu
             // 
             this.buttonZapocniPromjenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonZapocniPromjenu.Location = new System.Drawing.Point(751, 218);
-            this.buttonZapocniPromjenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonZapocniPromjenu.Location = new System.Drawing.Point(563, 177);
             this.buttonZapocniPromjenu.Name = "buttonZapocniPromjenu";
-            this.buttonZapocniPromjenu.Size = new System.Drawing.Size(188, 50);
+            this.buttonZapocniPromjenu.Size = new System.Drawing.Size(141, 41);
             this.buttonZapocniPromjenu.TabIndex = 3;
             this.buttonZapocniPromjenu.Text = "Promijeni lozinku";
             this.buttonZapocniPromjenu.UseVisualStyleBackColor = true;
@@ -107,11 +104,9 @@
             this.groupBoxPrijava.Controls.Add(this.textBoxUpisKorisnicko);
             this.groupBoxPrijava.Controls.Add(this.labelUpisLozinka);
             this.groupBoxPrijava.Controls.Add(this.labelUpisKorisnicko);
-            this.groupBoxPrijava.Location = new System.Drawing.Point(69, 297);
-            this.groupBoxPrijava.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxPrijava.Location = new System.Drawing.Point(52, 241);
             this.groupBoxPrijava.Name = "groupBoxPrijava";
-            this.groupBoxPrijava.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxPrijava.Size = new System.Drawing.Size(383, 260);
+            this.groupBoxPrijava.Size = new System.Drawing.Size(287, 211);
             this.groupBoxPrijava.TabIndex = 4;
             this.groupBoxPrijava.TabStop = false;
             this.groupBoxPrijava.Text = "Podatci za prijavu";
@@ -120,10 +115,9 @@
             // buttonPrijaviSe
             // 
             this.buttonPrijaviSe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrijaviSe.Location = new System.Drawing.Point(105, 191);
-            this.buttonPrijaviSe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPrijaviSe.Location = new System.Drawing.Point(79, 155);
             this.buttonPrijaviSe.Name = "buttonPrijaviSe";
-            this.buttonPrijaviSe.Size = new System.Drawing.Size(131, 43);
+            this.buttonPrijaviSe.Size = new System.Drawing.Size(98, 35);
             this.buttonPrijaviSe.TabIndex = 6;
             this.buttonPrijaviSe.Text = "Prijava";
             this.buttonPrijaviSe.UseVisualStyleBackColor = true;
@@ -132,29 +126,26 @@
             // textBoxUpisLozinka
             // 
             this.textBoxUpisLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUpisLozinka.Location = new System.Drawing.Point(183, 133);
-            this.textBoxUpisLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxUpisLozinka.Location = new System.Drawing.Point(137, 108);
             this.textBoxUpisLozinka.Name = "textBoxUpisLozinka";
-            this.textBoxUpisLozinka.Size = new System.Drawing.Size(132, 29);
+            this.textBoxUpisLozinka.Size = new System.Drawing.Size(100, 24);
             this.textBoxUpisLozinka.TabIndex = 3;
             // 
             // textBoxUpisKorisnicko
             // 
             this.textBoxUpisKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUpisKorisnicko.Location = new System.Drawing.Point(183, 69);
-            this.textBoxUpisKorisnicko.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxUpisKorisnicko.Location = new System.Drawing.Point(137, 56);
             this.textBoxUpisKorisnicko.Name = "textBoxUpisKorisnicko";
-            this.textBoxUpisKorisnicko.Size = new System.Drawing.Size(132, 29);
+            this.textBoxUpisKorisnicko.Size = new System.Drawing.Size(100, 24);
             this.textBoxUpisKorisnicko.TabIndex = 2;
             // 
             // labelUpisLozinka
             // 
             this.labelUpisLozinka.AutoSize = true;
             this.labelUpisLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpisLozinka.Location = new System.Drawing.Point(77, 135);
-            this.labelUpisLozinka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUpisLozinka.Location = new System.Drawing.Point(58, 110);
             this.labelUpisLozinka.Name = "labelUpisLozinka";
-            this.labelUpisLozinka.Size = new System.Drawing.Size(79, 24);
+            this.labelUpisLozinka.Size = new System.Drawing.Size(64, 18);
             this.labelUpisLozinka.TabIndex = 1;
             this.labelUpisLozinka.Text = "Lozinka:";
             // 
@@ -162,10 +153,9 @@
             // 
             this.labelUpisKorisnicko.AutoSize = true;
             this.labelUpisKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpisKorisnicko.Location = new System.Drawing.Point(27, 68);
-            this.labelUpisKorisnicko.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUpisKorisnicko.Location = new System.Drawing.Point(20, 55);
             this.labelUpisKorisnicko.Name = "labelUpisKorisnicko";
-            this.labelUpisKorisnicko.Size = new System.Drawing.Size(138, 24);
+            this.labelUpisKorisnicko.Size = new System.Drawing.Size(111, 18);
             this.labelUpisKorisnicko.TabIndex = 0;
             this.labelUpisKorisnicko.Text = "Korisničko ime:";
             // 
@@ -180,11 +170,9 @@
             this.groupBoxPromjenaLozinke.Controls.Add(this.labelPotvrdiNovu);
             this.groupBoxPromjenaLozinke.Controls.Add(this.labelNovaLozinka);
             this.groupBoxPromjenaLozinke.Controls.Add(this.labelLozinkaUpisi);
-            this.groupBoxPromjenaLozinke.Location = new System.Drawing.Point(601, 297);
-            this.groupBoxPromjenaLozinke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxPromjenaLozinke.Location = new System.Drawing.Point(451, 241);
             this.groupBoxPromjenaLozinke.Name = "groupBoxPromjenaLozinke";
-            this.groupBoxPromjenaLozinke.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxPromjenaLozinke.Size = new System.Drawing.Size(468, 305);
+            this.groupBoxPromjenaLozinke.Size = new System.Drawing.Size(351, 248);
             this.groupBoxPromjenaLozinke.TabIndex = 5;
             this.groupBoxPromjenaLozinke.TabStop = false;
             this.groupBoxPromjenaLozinke.Text = "Promjena lozinke";
@@ -193,30 +181,27 @@
             // textBoxPromjenaKorisnicko
             // 
             this.textBoxPromjenaKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPromjenaKorisnicko.Location = new System.Drawing.Point(239, 42);
-            this.textBoxPromjenaKorisnicko.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPromjenaKorisnicko.Location = new System.Drawing.Point(179, 34);
             this.textBoxPromjenaKorisnicko.Name = "textBoxPromjenaKorisnicko";
-            this.textBoxPromjenaKorisnicko.Size = new System.Drawing.Size(132, 29);
+            this.textBoxPromjenaKorisnicko.Size = new System.Drawing.Size(100, 24);
             this.textBoxPromjenaKorisnicko.TabIndex = 8;
             // 
             // labelPromjenaKorisnicko
             // 
             this.labelPromjenaKorisnicko.AutoSize = true;
             this.labelPromjenaKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPromjenaKorisnicko.Location = new System.Drawing.Point(43, 49);
-            this.labelPromjenaKorisnicko.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPromjenaKorisnicko.Location = new System.Drawing.Point(32, 40);
             this.labelPromjenaKorisnicko.Name = "labelPromjenaKorisnicko";
-            this.labelPromjenaKorisnicko.Size = new System.Drawing.Size(138, 24);
+            this.labelPromjenaKorisnicko.Size = new System.Drawing.Size(111, 18);
             this.labelPromjenaKorisnicko.TabIndex = 7;
             this.labelPromjenaKorisnicko.Text = "Korisničko ime:";
             // 
             // buttonPromijeniLozinku
             // 
             this.buttonPromijeniLozinku.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPromijeniLozinku.Location = new System.Drawing.Point(149, 235);
-            this.buttonPromijeniLozinku.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPromijeniLozinku.Location = new System.Drawing.Point(112, 191);
             this.buttonPromijeniLozinku.Name = "buttonPromijeniLozinku";
-            this.buttonPromijeniLozinku.Size = new System.Drawing.Size(147, 53);
+            this.buttonPromijeniLozinku.Size = new System.Drawing.Size(110, 43);
             this.buttonPromijeniLozinku.TabIndex = 6;
             this.buttonPromijeniLozinku.Text = "Promijeni";
             this.buttonPromijeniLozinku.UseVisualStyleBackColor = true;
@@ -225,38 +210,34 @@
             // textBoxNovaLozinka
             // 
             this.textBoxNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNovaLozinka.Location = new System.Drawing.Point(239, 133);
-            this.textBoxNovaLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNovaLozinka.Location = new System.Drawing.Point(179, 108);
             this.textBoxNovaLozinka.Name = "textBoxNovaLozinka";
-            this.textBoxNovaLozinka.Size = new System.Drawing.Size(132, 29);
+            this.textBoxNovaLozinka.Size = new System.Drawing.Size(100, 24);
             this.textBoxNovaLozinka.TabIndex = 5;
             // 
             // textBoxPotvrdiNovu
             // 
             this.textBoxPotvrdiNovu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPotvrdiNovu.Location = new System.Drawing.Point(239, 180);
-            this.textBoxPotvrdiNovu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPotvrdiNovu.Location = new System.Drawing.Point(179, 146);
             this.textBoxPotvrdiNovu.Name = "textBoxPotvrdiNovu";
-            this.textBoxPotvrdiNovu.Size = new System.Drawing.Size(132, 29);
+            this.textBoxPotvrdiNovu.Size = new System.Drawing.Size(100, 24);
             this.textBoxPotvrdiNovu.TabIndex = 4;
             // 
             // textBoxSadasnjaLozinka
             // 
             this.textBoxSadasnjaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSadasnjaLozinka.Location = new System.Drawing.Point(239, 91);
-            this.textBoxSadasnjaLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSadasnjaLozinka.Location = new System.Drawing.Point(179, 74);
             this.textBoxSadasnjaLozinka.Name = "textBoxSadasnjaLozinka";
-            this.textBoxSadasnjaLozinka.Size = new System.Drawing.Size(132, 29);
+            this.textBoxSadasnjaLozinka.Size = new System.Drawing.Size(100, 24);
             this.textBoxSadasnjaLozinka.TabIndex = 3;
             // 
             // labelPotvrdiNovu
             // 
             this.labelPotvrdiNovu.AutoSize = true;
             this.labelPotvrdiNovu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPotvrdiNovu.Location = new System.Drawing.Point(43, 187);
-            this.labelPotvrdiNovu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPotvrdiNovu.Location = new System.Drawing.Point(32, 152);
             this.labelPotvrdiNovu.Name = "labelPotvrdiNovu";
-            this.labelPotvrdiNovu.Size = new System.Drawing.Size(183, 24);
+            this.labelPotvrdiNovu.Size = new System.Drawing.Size(145, 18);
             this.labelPotvrdiNovu.TabIndex = 2;
             this.labelPotvrdiNovu.Text = "Potvrdi novu lozinku:";
             // 
@@ -264,10 +245,9 @@
             // 
             this.labelNovaLozinka.AutoSize = true;
             this.labelNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNovaLozinka.Location = new System.Drawing.Point(43, 140);
-            this.labelNovaLozinka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNovaLozinka.Location = new System.Drawing.Point(32, 114);
             this.labelNovaLozinka.Name = "labelNovaLozinka";
-            this.labelNovaLozinka.Size = new System.Drawing.Size(122, 24);
+            this.labelNovaLozinka.Size = new System.Drawing.Size(98, 18);
             this.labelNovaLozinka.TabIndex = 1;
             this.labelNovaLozinka.Text = "Nova lozinka:";
             // 
@@ -275,20 +255,18 @@
             // 
             this.labelLozinkaUpisi.AutoSize = true;
             this.labelLozinkaUpisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLozinkaUpisi.Location = new System.Drawing.Point(43, 98);
-            this.labelLozinkaUpisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLozinkaUpisi.Location = new System.Drawing.Point(32, 80);
             this.labelLozinkaUpisi.Name = "labelLozinkaUpisi";
-            this.labelLozinkaUpisi.Size = new System.Drawing.Size(155, 24);
+            this.labelLozinkaUpisi.Size = new System.Drawing.Size(124, 18);
             this.labelLozinkaUpisi.TabIndex = 0;
             this.labelLozinkaUpisi.Text = "Sadašnja lozinka:";
             // 
             // buttomZatvori3
             // 
             this.buttomZatvori3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttomZatvori3.Location = new System.Drawing.Point(69, 564);
-            this.buttomZatvori3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttomZatvori3.Location = new System.Drawing.Point(52, 458);
             this.buttomZatvori3.Name = "buttomZatvori3";
-            this.buttomZatvori3.Size = new System.Drawing.Size(145, 41);
+            this.buttomZatvori3.Size = new System.Drawing.Size(109, 33);
             this.buttomZatvori3.TabIndex = 6;
             this.buttomZatvori3.Text = "Zatvori";
             this.buttomZatvori3.UseVisualStyleBackColor = true;
@@ -296,10 +274,10 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1179, 617);
+            this.ClientSize = new System.Drawing.Size(884, 501);
             this.Controls.Add(this.buttomZatvori3);
             this.Controls.Add(this.groupBoxPromjenaLozinke);
             this.Controls.Add(this.groupBoxPrijava);
@@ -307,7 +285,6 @@
             this.Controls.Add(this.buttonPrijava);
             this.Controls.Add(this.labelPromijeniLozinku);
             this.Controls.Add(this.labelPrijava);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
             this.Text = "Form3";
             this.groupBoxPrijava.ResumeLayout(false);

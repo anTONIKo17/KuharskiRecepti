@@ -86,5 +86,10 @@ namespace KuharskiRecepti
 
             }
         }
+
+        private void labelPrijava_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
