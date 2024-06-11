@@ -63,7 +63,6 @@
             this.labelPrijava.Size = new System.Drawing.Size(189, 118);
             this.labelPrijava.TabIndex = 0;
             this.labelPrijava.Text = "Prijava";
-            this.labelPrijava.Click += new System.EventHandler(this.labelPrijava_Click);
             // 
             // labelPromijeniLozinku
             // 

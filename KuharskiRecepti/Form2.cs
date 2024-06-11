@@ -13,7 +13,7 @@ namespace KuharskiRecepti
 {
     public partial class Form2 : Form
     {
-        string path = "registracija.txt";
+        string path = "..\\..\\registracija.txt";
         public Form2()
         {
             InitializeComponent();
@@ -46,16 +46,17 @@ namespace KuharskiRecepti
                 while (linija1 != null)
                 {
                     string[] lin = linija1.Split('|');
-                    if (textBoxKorisnickoIme.Text == lin[2])
+                    if (textBoxKorisnickoIme.Text == lin[0])
                     {
                         textBoxKorisnickoIme.Text = "";
                         MessageBox.Show("Upisano korisničko ime već je iskorišteno i upotrebljeno.\nMolimo vas da smislite neko drugo korisničmo ime!");
                     }
                     linija1 = sr.ReadLine();
                 }
+                sr.Close();
                 if (textBoxKorisnickoIme.Text != "")
                 {
-                    string linija2 = textBoxIme.Text + "|" + textBoxPrezime.Text + "|" + textBoxKorisnickoIme.Text + "|" + textBoxLozinka.Text;
+                    string linija2 = textBoxKorisnickoIme.Text + "|" + textBoxLozinka.Text;
                     StreamWriter sw = new StreamWriter(path, true);
                     sw.WriteLine(linija2);
                     textBoxIme.Text = "";

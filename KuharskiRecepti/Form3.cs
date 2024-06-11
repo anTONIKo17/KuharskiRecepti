@@ -13,7 +13,7 @@ namespace KuharskiRecepti
 {
     public partial class Form3 : Form
     {
-        string path = "registracija.txt";
+        string path = "..\\..\\registracija.txt";
         public Form3()
         {
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace KuharskiRecepti
                 while(linija != null)
                 {
                     string[] lin = linija.Split('|');
-                    if (textBoxUpisKorisnicko.Text == lin[2] && textBoxUpisLozinka.Text == lin[3])
+                    if (textBoxUpisKorisnicko.Text == lin[0] && textBoxUpisLozinka.Text == lin[1])
                     {
                         textBoxUpisKorisnicko.Text = "";
                         textBoxUpisLozinka.Text = "";
@@ -83,13 +83,34 @@ namespace KuharskiRecepti
             }
             else
             {
-
+                StreamReader sr1 = new StreamReader(path);
+                string linija1 = sr1.ReadLine();
+                string linija2;
+                while(linija1 != null)
+                {
+                    string[] lin1 = linija1.Split('|');
+                    if (textBoxPromjenaKorisnicko.Text == lin1[0] && textBoxSadasnjaLozinka.Text == lin1[1])
+                    {
+                        linija2 = textBoxPromjenaKorisnicko.Text + "|" + textBoxNovaLozinka.Text;
+                        textBoxPromjenaKorisnicko.Text = "";
+                        textBoxSadasnjaLozinka.Text = "";
+                        textBoxNovaLozinka.Text = "";
+                        textBoxPotvrdiNovu.Text = "";
+                        sr1.Close();
+                        StreamWriter sw = new StreamWriter(path,true);
+                        sw.WriteLine(linija2);
+                        sw.Close();
+                        break;
+                    }
+                    linija1 = sr1.ReadLine();
+                }
+                sr1.Close();
+                if(textBoxPromjenaKorisnicko.Text=="" && textBoxNovaLozinka.Text=="")
+                {
+                    MessageBox.Show("Vaša je lozinka uspješno promijenjena!");
+                }
             }
         }
 
-        private void labelPrijava_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

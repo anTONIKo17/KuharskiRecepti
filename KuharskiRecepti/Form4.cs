@@ -17,12 +17,6 @@ namespace KuharskiRecepti
             InitializeComponent();
         }
 
-        private void buttonUnos_Click(object sender, EventArgs e)
-        {
-            Form5 form5 = new Form5();
-            form5.ShowDialog();
-        }
-
         private void buttonMoji_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
@@ -32,6 +26,12 @@ namespace KuharskiRecepti
         private void buttonZatvori4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonUnos_Click_1(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.ShowDialog();
         }
     }
 }

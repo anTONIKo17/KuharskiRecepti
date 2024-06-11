@@ -60,21 +60,22 @@
             // buttonUnos
             // 
             this.buttonUnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.buttonUnos.Location = new System.Drawing.Point(475, 284);
-            this.buttonUnos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUnos.Location = new System.Drawing.Point(470, 284);
+            this.buttonUnos.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUnos.Name = "buttonUnos";
-            this.buttonUnos.Size = new System.Drawing.Size(112, 32);
+            this.buttonUnos.Size = new System.Drawing.Size(129, 32);
             this.buttonUnos.TabIndex = 18;
             this.buttonUnos.Text = "Unos recepata";
             this.buttonUnos.UseVisualStyleBackColor = true;
+            this.buttonUnos.Click += new System.EventHandler(this.buttonUnos_Click_1);
             // 
             // buttonMoji
             // 
             this.buttonMoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.buttonMoji.Location = new System.Drawing.Point(296, 284);
-            this.buttonMoji.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonMoji.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMoji.Name = "buttonMoji";
-            this.buttonMoji.Size = new System.Drawing.Size(112, 32);
+            this.buttonMoji.Size = new System.Drawing.Size(120, 32);
             this.buttonMoji.TabIndex = 19;
             this.buttonMoji.Text = "Moji recepti";
             this.buttonMoji.UseVisualStyleBackColor = true;
