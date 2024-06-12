@@ -13,6 +13,7 @@ namespace KuharskiRecepti
 {
     public partial class Form5 : Form
     {
+        string path = "..\\..\\registracija.txt";
         string path1 = "..\\..\\recept.txt";
         string path2 = "..\\..\\postupak.txt";
         string path3 = "...\\..\\sastojci.txt";
@@ -43,7 +44,7 @@ namespace KuharskiRecepti
 
         private void buttonSpremiOsnovno_Click(object sender, EventArgs e)
         {
-            if(textBoxNazivR.Text==""||maskedTextBoxBroj.Text=="")
+            if(textBoxNazivR.Text==""||maskedTextBoxBroj.Text==""||textBoxKorisIme.Text=="")
             {
                 MessageBox.Show("Nisu uneseni naziv recepta ili broj sastojaka!");
             }
@@ -51,40 +52,59 @@ namespace KuharskiRecepti
             {
                 MessageBox.Show("Nije odabrano nijedno ponuđeno vrijeme potrebno za pripremu!");
             }
+            if(textBoxKorisIme.Text != "")
+            {
+                StreamReader sr = new StreamReader(path);
+                string linija = sr.ReadLine();
+                while(linija != null)
+                {
+                    string[] lin = linija.Split('|');
+                    if (textBoxKorisIme.Text == lin[0])
+                    {
+                        textBoxKorisIme.Text = "";
+                    }
+                    linija = sr.ReadLine();
+                }
+                sr.Close();
+                if(textBoxKorisIme.Text != "")
+                {
+                    MessageBox.Show("Uneseno korisničko ime nije pronađeno, provjerite jeste li unijeli točno ime!");
+                }
+            }
             else
             {
                 if (radioButton1.Checked == true)
                 {
                     StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton1.Text;
+                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton1.Text;
                     sw.WriteLine(linija);
                     sw.Close();
                 }
                 if (radioButton2.Checked == true)
                 {
                     StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton2.Text;
+                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton2.Text;
                     sw.WriteLine(linija);
                     sw.Close();
                 }
                 if (radioButton3.Checked == true)
                 {
                     StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton3.Text;
+                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton3.Text;
                     sw.WriteLine(linija);
                     sw.Close();
                 }
                 if (radioButton4.Checked == true)
                 {
                     StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton4.Text;
+                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton4.Text;
                     sw.WriteLine(linija);
                     sw.Close();
                 }
                 if (radioButton5.Checked == true)
                 {
                     StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton5.Text;
+                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton5.Text;
                     sw.WriteLine(linija);
                     sw.Close();
                 }
@@ -93,21 +113,51 @@ namespace KuharskiRecepti
 
         private void buttonSpremiSastojak_Click(object sender, EventArgs e)
         {
-
+            if(textBoxKolicina.Text==""||textBoxSastojak.Text==""||comboBoxKolicina.Text=="")
+            {
+                MessageBox.Show("Nisu uneseni svi potrebni podatci za sastojak!");
+            }
+            else
+            {
+                StreamWriter sw = new StreamWriter(path3, true);
+                string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text;
+                if(checkBoxPosljednji.Checked==false)
+                {
+                    linija = linija + '|' + textBoxSastojak.Text + "" + textBoxKolicina.Text + "" + comboBoxKolicina.Text;
+                }
+                if(checkBoxPosljednji.Checked==true)
+                {
+                    linija = linija + '|' + textBoxSastojak.Text + "" + textBoxKolicina.Text + "" + comboBoxKolicina.Text;
+                    sw.WriteLine(linija);
+                }
+                sw.Close();
+            }
         }
 
         private void buttonSpremiPostupak_Click(object sender, EventArgs e)
         {
-            if(textBoxOpisPostupka.Text=="")
+            if(textBoxOpisPostupka.Text==""||textBoxKorisIme.Text==""||textBoxNazivR.Text=="")
             {
-                MessageBox.Show("Nije upisano ništa za opis postupka!");
+                MessageBox.Show("Nije upisano ništa za opis postupka niti korisničko ime!");
             }
             else
             {
                 StreamWriter sw = new StreamWriter(path2, true);
-                string linija = textBoxOpisPostupka.Text;
+                string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + textBoxOpisPostupka.Text;
                 sw.WriteLine(linija);
                 sw.Close();
+            }
+        }
+
+        private void buttonSpremiSliku_Click(object sender, EventArgs e)
+        {
+            if(textBoxDatoteka.Text=="")
+            {
+                MessageBox.Show("Nije uneseno ime datoteke, odnosno fotografije!");
+            }
+            else
+            {
+
             }
         }
     }

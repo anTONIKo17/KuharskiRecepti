@@ -37,22 +37,23 @@
             this.labelVrijeme = new System.Windows.Forms.Label();
             this.buttonSastojci = new System.Windows.Forms.Button();
             this.groupBoxUnosSastojaka = new System.Windows.Forms.GroupBox();
+            this.textBoxKolicina = new System.Windows.Forms.TextBox();
+            this.comboBoxKolicina = new System.Windows.Forms.ComboBox();
+            this.labelKolicina = new System.Windows.Forms.Label();
+            this.textBoxSastojak = new System.Windows.Forms.TextBox();
+            this.labelSastojak = new System.Windows.Forms.Label();
             this.buttonSpremiSastojak = new System.Windows.Forms.Button();
             this.checkBoxPosljednji = new System.Windows.Forms.CheckBox();
             this.buttonOpis = new System.Windows.Forms.Button();
             this.textBoxOpisPostupka = new System.Windows.Forms.TextBox();
-            this.labelSastojak = new System.Windows.Forms.Label();
-            this.textBoxSastojak = new System.Windows.Forms.TextBox();
             this.buttonUnesiSliku = new System.Windows.Forms.Button();
-            this.labelKolicina = new System.Windows.Forms.Label();
-            this.comboBoxKolicina = new System.Windows.Forms.ComboBox();
-            this.textBoxKolicina = new System.Windows.Forms.TextBox();
             this.groupBoxOpisPostupka = new System.Windows.Forms.GroupBox();
             this.buttonSpremiPostupak = new System.Windows.Forms.Button();
             this.groupBoxUnosSlike = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelDatoteka = new System.Windows.Forms.Label();
+            this.buttonSpremiSliku = new System.Windows.Forms.Button();
             this.textBoxDatoteka = new System.Windows.Forms.TextBox();
+            this.labelDatoteka = new System.Windows.Forms.Label();
+            this.pictureBoxFotografija = new System.Windows.Forms.PictureBox();
             this.buttonZatvori5 = new System.Windows.Forms.Button();
             this.buttonSpremiOsnovno = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -60,11 +61,12 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.buttonSpremiSliku = new System.Windows.Forms.Button();
+            this.labelKorisnicko = new System.Windows.Forms.Label();
+            this.textBoxKorisIme = new System.Windows.Forms.TextBox();
             this.groupBoxUnosSastojaka.SuspendLayout();
             this.groupBoxOpisPostupka.SuspendLayout();
             this.groupBoxUnosSlike.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotografija)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNazivR
@@ -108,7 +110,7 @@
             // 
             this.labelUnos.AutoSize = true;
             this.labelUnos.Font = new System.Drawing.Font("Gabriola", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUnos.Location = new System.Drawing.Point(12, 22);
+            this.labelUnos.Location = new System.Drawing.Point(240, 22);
             this.labelUnos.Name = "labelUnos";
             this.labelUnos.Size = new System.Drawing.Size(314, 118);
             this.labelUnos.TabIndex = 4;
@@ -152,6 +154,63 @@
             this.groupBoxUnosSastojaka.Text = "Unos sastojaka";
             this.groupBoxUnosSastojaka.Visible = false;
             // 
+            // textBoxKolicina
+            // 
+            this.textBoxKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKolicina.Location = new System.Drawing.Point(15, 121);
+            this.textBoxKolicina.Name = "textBoxKolicina";
+            this.textBoxKolicina.Size = new System.Drawing.Size(100, 24);
+            this.textBoxKolicina.TabIndex = 7;
+            // 
+            // comboBoxKolicina
+            // 
+            this.comboBoxKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxKolicina.FormattingEnabled = true;
+            this.comboBoxKolicina.Items.AddRange(new object[] {
+            "kg",
+            "dag",
+            "g",
+            "L",
+            "dL",
+            "mL",
+            "žlica",
+            "žličica",
+            "čaša",
+            "prstohvat",
+            "/"});
+            this.comboBoxKolicina.Location = new System.Drawing.Point(138, 121);
+            this.comboBoxKolicina.Name = "comboBoxKolicina";
+            this.comboBoxKolicina.Size = new System.Drawing.Size(121, 26);
+            this.comboBoxKolicina.TabIndex = 6;
+            // 
+            // labelKolicina
+            // 
+            this.labelKolicina.AutoSize = true;
+            this.labelKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKolicina.Location = new System.Drawing.Point(100, 77);
+            this.labelKolicina.Name = "labelKolicina";
+            this.labelKolicina.Size = new System.Drawing.Size(64, 18);
+            this.labelKolicina.TabIndex = 5;
+            this.labelKolicina.Text = "Količina:";
+            // 
+            // textBoxSastojak
+            // 
+            this.textBoxSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSastojak.Location = new System.Drawing.Point(88, 29);
+            this.textBoxSastojak.Name = "textBoxSastojak";
+            this.textBoxSastojak.Size = new System.Drawing.Size(100, 24);
+            this.textBoxSastojak.TabIndex = 4;
+            // 
+            // labelSastojak
+            // 
+            this.labelSastojak.AutoSize = true;
+            this.labelSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSastojak.Location = new System.Drawing.Point(12, 32);
+            this.labelSastojak.Name = "labelSastojak";
+            this.labelSastojak.Size = new System.Drawing.Size(70, 18);
+            this.labelSastojak.TabIndex = 3;
+            this.labelSastojak.Text = "Sastojak:";
+            // 
             // buttonSpremiSastojak
             // 
             this.buttonSpremiSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,75 +251,17 @@
             this.textBoxOpisPostupka.Name = "textBoxOpisPostupka";
             this.textBoxOpisPostupka.Size = new System.Drawing.Size(213, 161);
             this.textBoxOpisPostupka.TabIndex = 14;
-            this.textBoxOpisPostupka.Visible = false;
-            // 
-            // labelSastojak
-            // 
-            this.labelSastojak.AutoSize = true;
-            this.labelSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSastojak.Location = new System.Drawing.Point(12, 32);
-            this.labelSastojak.Name = "labelSastojak";
-            this.labelSastojak.Size = new System.Drawing.Size(70, 18);
-            this.labelSastojak.TabIndex = 3;
-            this.labelSastojak.Text = "Sastojak:";
-            // 
-            // textBoxSastojak
-            // 
-            this.textBoxSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSastojak.Location = new System.Drawing.Point(88, 29);
-            this.textBoxSastojak.Name = "textBoxSastojak";
-            this.textBoxSastojak.Size = new System.Drawing.Size(100, 24);
-            this.textBoxSastojak.TabIndex = 4;
             // 
             // buttonUnesiSliku
             // 
             this.buttonUnesiSliku.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUnesiSliku.Location = new System.Drawing.Point(362, 62);
+            this.buttonUnesiSliku.Location = new System.Drawing.Point(624, -3);
             this.buttonUnesiSliku.Name = "buttonUnesiSliku";
-            this.buttonUnesiSliku.Size = new System.Drawing.Size(153, 34);
+            this.buttonUnesiSliku.Size = new System.Drawing.Size(185, 34);
             this.buttonUnesiSliku.TabIndex = 15;
-            this.buttonUnesiSliku.Text = "Unesi sliku recepta";
+            this.buttonUnesiSliku.Text = "Unesi fotografiju recepta";
             this.buttonUnesiSliku.UseVisualStyleBackColor = true;
             this.buttonUnesiSliku.Click += new System.EventHandler(this.buttonUnesiSliku_Click);
-            // 
-            // labelKolicina
-            // 
-            this.labelKolicina.AutoSize = true;
-            this.labelKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKolicina.Location = new System.Drawing.Point(100, 77);
-            this.labelKolicina.Name = "labelKolicina";
-            this.labelKolicina.Size = new System.Drawing.Size(64, 18);
-            this.labelKolicina.TabIndex = 5;
-            this.labelKolicina.Text = "Količina:";
-            // 
-            // comboBoxKolicina
-            // 
-            this.comboBoxKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxKolicina.FormattingEnabled = true;
-            this.comboBoxKolicina.Items.AddRange(new object[] {
-            "kg",
-            "dag",
-            "g",
-            "L",
-            "dL",
-            "mL",
-            "žlica",
-            "žličica",
-            "čaša",
-            "prstohvat",
-            "/"});
-            this.comboBoxKolicina.Location = new System.Drawing.Point(138, 121);
-            this.comboBoxKolicina.Name = "comboBoxKolicina";
-            this.comboBoxKolicina.Size = new System.Drawing.Size(121, 26);
-            this.comboBoxKolicina.TabIndex = 6;
-            // 
-            // textBoxKolicina
-            // 
-            this.textBoxKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKolicina.Location = new System.Drawing.Point(15, 121);
-            this.textBoxKolicina.Name = "textBoxKolicina";
-            this.textBoxKolicina.Size = new System.Drawing.Size(100, 24);
-            this.textBoxKolicina.TabIndex = 7;
             // 
             // groupBoxOpisPostupka
             // 
@@ -272,6 +273,7 @@
             this.groupBoxOpisPostupka.TabIndex = 16;
             this.groupBoxOpisPostupka.TabStop = false;
             this.groupBoxOpisPostupka.Text = "Opis postupka";
+            this.groupBoxOpisPostupka.Visible = false;
             // 
             // buttonSpremiPostupak
             // 
@@ -289,23 +291,33 @@
             this.groupBoxUnosSlike.Controls.Add(this.buttonSpremiSliku);
             this.groupBoxUnosSlike.Controls.Add(this.textBoxDatoteka);
             this.groupBoxUnosSlike.Controls.Add(this.labelDatoteka);
-            this.groupBoxUnosSlike.Controls.Add(this.pictureBox1);
-            this.groupBoxUnosSlike.Location = new System.Drawing.Point(539, 12);
+            this.groupBoxUnosSlike.Controls.Add(this.pictureBoxFotografija);
+            this.groupBoxUnosSlike.Location = new System.Drawing.Point(560, 37);
             this.groupBoxUnosSlike.Name = "groupBoxUnosSlike";
             this.groupBoxUnosSlike.Size = new System.Drawing.Size(312, 144);
             this.groupBoxUnosSlike.TabIndex = 17;
             this.groupBoxUnosSlike.TabStop = false;
-            this.groupBoxUnosSlike.Text = "Unos slike";
+            this.groupBoxUnosSlike.Text = "Unos fotografije";
             this.groupBoxUnosSlike.Visible = false;
             // 
-            // pictureBox1
+            // buttonSpremiSliku
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(127, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 118);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.buttonSpremiSliku.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSpremiSliku.Location = new System.Drawing.Point(6, 94);
+            this.buttonSpremiSliku.Name = "buttonSpremiSliku";
+            this.buttonSpremiSliku.Size = new System.Drawing.Size(120, 34);
+            this.buttonSpremiSliku.TabIndex = 3;
+            this.buttonSpremiSliku.Text = "Spremi fotografiju";
+            this.buttonSpremiSliku.UseVisualStyleBackColor = true;
+            this.buttonSpremiSliku.Click += new System.EventHandler(this.buttonSpremiSliku_Click);
+            // 
+            // textBoxDatoteka
+            // 
+            this.textBoxDatoteka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDatoteka.Location = new System.Drawing.Point(20, 62);
+            this.textBoxDatoteka.Name = "textBoxDatoteka";
+            this.textBoxDatoteka.Size = new System.Drawing.Size(100, 22);
+            this.textBoxDatoteka.TabIndex = 2;
             // 
             // labelDatoteka
             // 
@@ -317,13 +329,14 @@
             this.labelDatoteka.TabIndex = 1;
             this.labelDatoteka.Text = "Ime datoteke:";
             // 
-            // textBoxDatoteka
+            // pictureBoxFotografija
             // 
-            this.textBoxDatoteka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDatoteka.Location = new System.Drawing.Point(20, 62);
-            this.textBoxDatoteka.Name = "textBoxDatoteka";
-            this.textBoxDatoteka.Size = new System.Drawing.Size(100, 22);
-            this.textBoxDatoteka.TabIndex = 2;
+            this.pictureBoxFotografija.Location = new System.Drawing.Point(127, 10);
+            this.pictureBoxFotografija.Name = "pictureBoxFotografija";
+            this.pictureBoxFotografija.Size = new System.Drawing.Size(164, 118);
+            this.pictureBoxFotografija.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxFotografija.TabIndex = 0;
+            this.pictureBoxFotografija.TabStop = false;
             // 
             // buttonZatvori5
             // 
@@ -407,15 +420,23 @@
             this.radioButton5.Text = ">2 h";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
-            // buttonSpremiSliku
+            // labelKorisnicko
             // 
-            this.buttonSpremiSliku.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSpremiSliku.Location = new System.Drawing.Point(19, 95);
-            this.buttonSpremiSliku.Name = "buttonSpremiSliku";
-            this.buttonSpremiSliku.Size = new System.Drawing.Size(101, 33);
-            this.buttonSpremiSliku.TabIndex = 3;
-            this.buttonSpremiSliku.Text = "Spremi sliku";
-            this.buttonSpremiSliku.UseVisualStyleBackColor = true;
+            this.labelKorisnicko.AutoSize = true;
+            this.labelKorisnicko.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKorisnicko.Location = new System.Drawing.Point(14, 22);
+            this.labelKorisnicko.Name = "labelKorisnicko";
+            this.labelKorisnicko.Size = new System.Drawing.Size(190, 18);
+            this.labelKorisnicko.TabIndex = 25;
+            this.labelKorisnicko.Text = "Unesi svoje korisničko ime:";
+            // 
+            // textBoxKorisIme
+            // 
+            this.textBoxKorisIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKorisIme.Location = new System.Drawing.Point(17, 65);
+            this.textBoxKorisIme.Name = "textBoxKorisIme";
+            this.textBoxKorisIme.Size = new System.Drawing.Size(187, 24);
+            this.textBoxKorisIme.TabIndex = 26;
             // 
             // Form5
             // 
@@ -423,6 +444,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 501);
+            this.Controls.Add(this.textBoxKorisIme);
+            this.Controls.Add(this.labelKorisnicko);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
@@ -450,7 +473,7 @@
             this.groupBoxOpisPostupka.PerformLayout();
             this.groupBoxUnosSlike.ResumeLayout(false);
             this.groupBoxUnosSlike.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotografija)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,7 +504,7 @@
         private System.Windows.Forms.GroupBox groupBoxUnosSlike;
         private System.Windows.Forms.TextBox textBoxDatoteka;
         private System.Windows.Forms.Label labelDatoteka;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxFotografija;
         private System.Windows.Forms.Button buttonZatvori5;
         private System.Windows.Forms.Button buttonSpremiOsnovno;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -490,5 +513,7 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.Button buttonSpremiSliku;
+        private System.Windows.Forms.Label labelKorisnicko;
+        private System.Windows.Forms.TextBox textBoxKorisIme;
     }
 }
