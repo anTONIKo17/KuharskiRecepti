@@ -16,7 +16,7 @@ namespace KuharskiRecepti
         string path = "..\\..\\registracija.txt";
         string path1 = "..\\..\\recept.txt";
         string path2 = "..\\..\\postupak.txt";
-        string path3 = "...\\..\\sastojci.txt";
+        string path3 = "..\\..\\sastojci.txt";
         public Form5()
         {
             InitializeComponent();
@@ -32,11 +32,6 @@ namespace KuharskiRecepti
             groupBoxOpisPostupka.Visible = true;
         }
 
-        private void buttonUnesiSliku_Click(object sender, EventArgs e)
-        {
-            groupBoxUnosSlike.Visible = true;
-        }
-
         private void buttonZatvori5_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -44,9 +39,10 @@ namespace KuharskiRecepti
 
         private void buttonSpremiOsnovno_Click(object sender, EventArgs e)
         {
+            int t = 0;
             if(textBoxNazivR.Text==""||maskedTextBoxBroj.Text==""||textBoxKorisIme.Text=="")
             {
-                MessageBox.Show("Nisu uneseni naziv recepta ili broj sastojaka!");
+                MessageBox.Show("Nisu uneseni naziv recepta, broj sastojaka ili korisničko ime!");
             }
             if(radioButton1.Checked==false&&radioButton2.Checked==false&&radioButton3.Checked==false&&radioButton4.Checked==false&&radioButton5.Checked==false)
             {
@@ -61,74 +57,87 @@ namespace KuharskiRecepti
                     string[] lin = linija.Split('|');
                     if (textBoxKorisIme.Text == lin[0])
                     {
-                        textBoxKorisIme.Text = "";
+                        t = 1;
                     }
                     linija = sr.ReadLine();
                 }
                 sr.Close();
-                if(textBoxKorisIme.Text != "")
+                if(t == 0)
                 {
                     MessageBox.Show("Uneseno korisničko ime nije pronađeno, provjerite jeste li unijeli točno ime!");
                 }
-            }
-            else
-            {
-                if (radioButton1.Checked == true)
+                else
                 {
-                    StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton1.Text;
-                    sw.WriteLine(linija);
-                    sw.Close();
-                }
-                if (radioButton2.Checked == true)
-                {
-                    StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton2.Text;
-                    sw.WriteLine(linija);
-                    sw.Close();
-                }
-                if (radioButton3.Checked == true)
-                {
-                    StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton3.Text;
-                    sw.WriteLine(linija);
-                    sw.Close();
-                }
-                if (radioButton4.Checked == true)
-                {
-                    StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton4.Text;
-                    sw.WriteLine(linija);
-                    sw.Close();
-                }
-                if (radioButton5.Checked == true)
-                {
-                    StreamWriter sw = new StreamWriter(path1, true);
-                    string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton5.Text;
-                    sw.WriteLine(linija);
-                    sw.Close();
+                    if (radioButton1.Checked == true)
+                    {
+                        StreamWriter sw = new StreamWriter(path1, true);
+                        string linija1 = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton1.Text;
+                        sw.WriteLine(linija1);
+                        sw.Close();
+                        MessageBox.Show("Podatci su uspješno uneseni!");
+                    }
+                    if (radioButton2.Checked == true)
+                    {
+                        StreamWriter sw = new StreamWriter(path1, true);
+                        string linija1 = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton2.Text;
+                        sw.WriteLine(linija1);
+                        sw.Close();
+                        MessageBox.Show("Podatci su uspješno uneseni!");
+                    }
+                    if (radioButton3.Checked == true)
+                    {
+                        StreamWriter sw = new StreamWriter(path1, true);
+                        string linija1 = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton3.Text;
+                        sw.WriteLine(linija1);
+                        sw.Close();
+                        MessageBox.Show("Podatci su uspješno uneseni!");
+                    }
+                    if (radioButton4.Checked == true)
+                    {
+                        StreamWriter sw = new StreamWriter(path1, true);
+                        string linija1 = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton4.Text;
+                        sw.WriteLine(linija1);
+                        sw.Close();
+                        MessageBox.Show("Podatci su uspješno uneseni!");
+                    }
+                    if (radioButton5.Checked == true)
+                    {
+                        StreamWriter sw = new StreamWriter(path1, true);
+                        string linija1 = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + maskedTextBoxBroj.Text + '|' + radioButton5.Text;
+                        sw.WriteLine(linija1);
+                        sw.Close();
+                        MessageBox.Show("Podatci su uspješno uneseni!");
+                    }
                 }
             }
         }
 
         private void buttonSpremiSastojak_Click(object sender, EventArgs e)
         {
-            if(textBoxKolicina.Text==""||textBoxSastojak.Text==""||comboBoxKolicina.Text=="")
+            if(textBoxKolicina.Text==""||textBoxSastojak.Text==""||comboBoxKolicina.Text==""||textBoxKorisIme.Text==""||textBoxNazivR.Text=="")
             {
                 MessageBox.Show("Nisu uneseni svi potrebni podatci za sastojak!");
             }
             else
             {
                 StreamWriter sw = new StreamWriter(path3, true);
-                string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text;
+                string linija;
                 if(checkBoxPosljednji.Checked==false)
                 {
-                    linija = linija + '|' + textBoxSastojak.Text + "" + textBoxKolicina.Text + "" + comboBoxKolicina.Text;
+                    linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + textBoxSastojak.Text + " " + textBoxKolicina.Text + " " + comboBoxKolicina.Text;
+                    sw.WriteLine(linija);
+                    textBoxSastojak.Text = "";
+                    textBoxKolicina.Text = "";
+                    comboBoxKolicina.Text = "";
                 }
                 if(checkBoxPosljednji.Checked==true)
                 {
-                    linija = linija + '|' + textBoxSastojak.Text + "" + textBoxKolicina.Text + "" + comboBoxKolicina.Text;
+                    linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + textBoxSastojak.Text + " " + textBoxKolicina.Text + " " + comboBoxKolicina.Text;
                     sw.WriteLine(linija);
+                    MessageBox.Show("Uspješno su uneseni svi sastojci za recept!");
+                    textBoxSastojak.Text = "";
+                    textBoxKolicina.Text = "";
+                    comboBoxKolicina.Text = "";
                 }
                 sw.Close();
             }
@@ -146,19 +155,11 @@ namespace KuharskiRecepti
                 string linija = textBoxKorisIme.Text + '|' + textBoxNazivR.Text + '|' + textBoxOpisPostupka.Text;
                 sw.WriteLine(linija);
                 sw.Close();
+                textBoxOpisPostupka.Text = "";
+                MessageBox.Show("Uspješno je unesen opis postupka!");
             }
         }
 
-        private void buttonSpremiSliku_Click(object sender, EventArgs e)
-        {
-            if(textBoxDatoteka.Text=="")
-            {
-                MessageBox.Show("Nije uneseno ime datoteke, odnosno fotografije!");
-            }
-            else
-            {
 
-            }
-        }
     }
 }
