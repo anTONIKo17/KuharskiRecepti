@@ -76,7 +76,7 @@ namespace KuharskiRecepti
         {
             if (radioButtonUzlazno.Checked == true)
             {
-                listBoxMojiRecepti.Sorted = true;
+                
             }
             if (radioButtonSilazno.Checked == true)
             {
@@ -87,22 +87,27 @@ namespace KuharskiRecepti
         private void listBoxMojiRecepti_SelectedIndexChanged(object sender, EventArgs e)
         {
             groupBoxRecept.Visible = true;
-            string tekst = null;
+            string tekst = null; 
             StreamReader sr = new StreamReader(path3);
             string linija = sr.ReadLine();
             while (linija != null)
             {
                 string[] lin = linija.Split('|');
-                if (lin[0] == textBoxKorisnickoMoji.Text&&listBoxMojiRecepti.SelectedItem.ToString()== lin[1])
+                if (lin[0] == textBoxKorisnickoMoji.Text && listBoxMojiRecepti.SelectedItem.ToString() == lin[1])
                 {
                     textBoxNaziv.Text = lin[1];
                     if (lin[1] == listBoxMojiRecepti.SelectedItem.ToString())
                     {
                         string[] lin1 = lin[2].Split(' ');
-                        tekst = tekst + " " + lin1[0] + " " + lin1[1] + " " + lin1[2] + " ";
+                        tekst = tekst + " " + lin1[0] + " " + lin1[1] + " " + lin1[2];
+                        if (lin[2].ToCharArray().Count() >= 20)
+                        {
+                            string tekst1 = lin1[3];
+                            tekst = tekst + " " + tekst1;
+                        }
                     }
                 }
-                linija= sr.ReadLine();
+                linija = sr.ReadLine();
             }
             textBoxSastojci.Text = tekst;
             sr.Close();

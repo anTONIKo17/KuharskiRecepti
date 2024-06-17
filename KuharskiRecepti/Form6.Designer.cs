@@ -42,13 +42,13 @@
             this.radioButtonBroj = new System.Windows.Forms.RadioButton();
             this.radioButtonVrijeme = new System.Windows.Forms.RadioButton();
             this.groupBoxRecept = new System.Windows.Forms.GroupBox();
+            this.textBoxPostupak6 = new System.Windows.Forms.TextBox();
+            this.textBoxSastojci = new System.Windows.Forms.TextBox();
+            this.textBoxNaziv = new System.Windows.Forms.TextBox();
             this.radioButtonSastojak = new System.Windows.Forms.RadioButton();
             this.groupBoxSastojak = new System.Windows.Forms.GroupBox();
-            this.labelSastojakSort = new System.Windows.Forms.Label();
             this.textBoxSastojakSort = new System.Windows.Forms.TextBox();
-            this.textBoxNaziv = new System.Windows.Forms.TextBox();
-            this.textBoxSastojci = new System.Windows.Forms.TextBox();
-            this.textBoxPostupak6 = new System.Windows.Forms.TextBox();
+            this.labelSastojakSort = new System.Windows.Forms.Label();
             this.buttonSortiraj = new System.Windows.Forms.Button();
             this.groupBoxRecept.SuspendLayout();
             this.groupBoxSastojak.SuspendLayout();
@@ -58,7 +58,7 @@
             // 
             this.labelMojiRecepti.AutoSize = true;
             this.labelMojiRecepti.Font = new System.Drawing.Font("Gabriola", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelMojiRecepti.Location = new System.Drawing.Point(407, 9);
+            this.labelMojiRecepti.Location = new System.Drawing.Point(323, 9);
             this.labelMojiRecepti.Name = "labelMojiRecepti";
             this.labelMojiRecepti.Size = new System.Drawing.Size(357, 147);
             this.labelMojiRecepti.TabIndex = 0;
@@ -189,13 +189,39 @@
             this.groupBoxRecept.Controls.Add(this.textBoxSastojci);
             this.groupBoxRecept.Controls.Add(this.textBoxNaziv);
             this.groupBoxRecept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxRecept.Location = new System.Drawing.Point(638, 185);
+            this.groupBoxRecept.Location = new System.Drawing.Point(638, 114);
             this.groupBoxRecept.Name = "groupBoxRecept";
-            this.groupBoxRecept.Size = new System.Drawing.Size(529, 391);
+            this.groupBoxRecept.Size = new System.Drawing.Size(529, 462);
             this.groupBoxRecept.TabIndex = 12;
             this.groupBoxRecept.TabStop = false;
             this.groupBoxRecept.Text = "Recept";
             this.groupBoxRecept.Visible = false;
+            // 
+            // textBoxPostupak6
+            // 
+            this.textBoxPostupak6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxPostupak6.Location = new System.Drawing.Point(35, 268);
+            this.textBoxPostupak6.Multiline = true;
+            this.textBoxPostupak6.Name = "textBoxPostupak6";
+            this.textBoxPostupak6.Size = new System.Drawing.Size(473, 159);
+            this.textBoxPostupak6.TabIndex = 2;
+            // 
+            // textBoxSastojci
+            // 
+            this.textBoxSastojci.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxSastojci.Location = new System.Drawing.Point(35, 93);
+            this.textBoxSastojci.Multiline = true;
+            this.textBoxSastojci.Name = "textBoxSastojci";
+            this.textBoxSastojci.Size = new System.Drawing.Size(473, 146);
+            this.textBoxSastojci.TabIndex = 1;
+            // 
+            // textBoxNaziv
+            // 
+            this.textBoxNaziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNaziv.Location = new System.Drawing.Point(181, 49);
+            this.textBoxNaziv.Name = "textBoxNaziv";
+            this.textBoxNaziv.Size = new System.Drawing.Size(178, 28);
+            this.textBoxNaziv.TabIndex = 0;
             // 
             // radioButtonSastojak
             // 
@@ -222,6 +248,14 @@
             this.groupBoxSastojak.Text = "Sastojak";
             this.groupBoxSastojak.Visible = false;
             // 
+            // textBoxSastojakSort
+            // 
+            this.textBoxSastojakSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxSastojakSort.Location = new System.Drawing.Point(22, 76);
+            this.textBoxSastojakSort.Name = "textBoxSastojakSort";
+            this.textBoxSastojakSort.Size = new System.Drawing.Size(100, 28);
+            this.textBoxSastojakSort.TabIndex = 1;
+            // 
             // labelSastojakSort
             // 
             this.labelSastojakSort.AutoSize = true;
@@ -231,40 +265,6 @@
             this.labelSastojakSort.Size = new System.Drawing.Size(132, 22);
             this.labelSastojakSort.TabIndex = 0;
             this.labelSastojakSort.Text = "Unesi sastojak:";
-            // 
-            // textBoxSastojakSort
-            // 
-            this.textBoxSastojakSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxSastojakSort.Location = new System.Drawing.Point(22, 76);
-            this.textBoxSastojakSort.Name = "textBoxSastojakSort";
-            this.textBoxSastojakSort.Size = new System.Drawing.Size(100, 28);
-            this.textBoxSastojakSort.TabIndex = 1;
-            // 
-            // textBoxNaziv
-            // 
-            this.textBoxNaziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxNaziv.Location = new System.Drawing.Point(181, 49);
-            this.textBoxNaziv.Name = "textBoxNaziv";
-            this.textBoxNaziv.Size = new System.Drawing.Size(178, 28);
-            this.textBoxNaziv.TabIndex = 0;
-            // 
-            // textBoxSastojci
-            // 
-            this.textBoxSastojci.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxSastojci.Location = new System.Drawing.Point(75, 119);
-            this.textBoxSastojci.Multiline = true;
-            this.textBoxSastojci.Name = "textBoxSastojci";
-            this.textBoxSastojci.Size = new System.Drawing.Size(399, 102);
-            this.textBoxSastojci.TabIndex = 1;
-            // 
-            // textBoxPostupak6
-            // 
-            this.textBoxPostupak6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxPostupak6.Location = new System.Drawing.Point(75, 253);
-            this.textBoxPostupak6.Multiline = true;
-            this.textBoxPostupak6.Name = "textBoxPostupak6";
-            this.textBoxPostupak6.Size = new System.Drawing.Size(399, 102);
-            this.textBoxPostupak6.TabIndex = 2;
             // 
             // buttonSortiraj
             // 
@@ -299,7 +299,7 @@
             this.Controls.Add(this.textBoxKorisnickoMoji);
             this.Controls.Add(this.labelUnesiKorisnicko);
             this.Controls.Add(this.labelMojiRecepti);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form6";
             this.Text = "Form6";
             this.groupBoxRecept.ResumeLayout(false);

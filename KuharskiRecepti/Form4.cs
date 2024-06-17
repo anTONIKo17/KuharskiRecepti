@@ -33,5 +33,11 @@ namespace KuharskiRecepti
             Form5 form5 = new Form5();
             form5.ShowDialog();
         }
+
+        private void buttonGenerirajRecept_Click(object sender, EventArgs e)
+        {
+            Form7 form7=new Form7();
+            form7.ShowDialog();
+        }
     }
 }
