@@ -87,7 +87,7 @@ namespace KuharskiRecepti
         private void listBoxMojiRecepti_SelectedIndexChanged(object sender, EventArgs e)
         {
             groupBoxRecept.Visible = true;
-            string tekst = null; 
+            string tekst = null;
             StreamReader sr = new StreamReader(path3);
             string linija = sr.ReadLine();
             while (linija != null)
@@ -113,16 +113,29 @@ namespace KuharskiRecepti
             sr.Close();
             StreamReader sr1 = new StreamReader(path2);
             string linija1 = sr1.ReadLine();
-            while(linija1!= null)
+            while (linija1 != null)
             {
                 string[] lin = linija1.Split('|');
-                if (lin[0] == textBoxKorisnickoMoji.Text && lin[1]==textBoxNaziv.Text)
+                if (lin[0] == textBoxKorisnickoMoji.Text && lin[1] == textBoxNaziv.Text)
                 {
                     textBoxPostupak6.Text = lin[2];
                 }
-                linija1= sr1.ReadLine();
+                linija1 = sr1.ReadLine();
             }
             sr1.Close();
+            StreamReader sr2 = new StreamReader(path1);
+            string linija2 = sr2.ReadLine();
+            while (linija2 != null)
+            {
+                string[] lin = linija2.Split('|');
+                if (lin[0] == textBoxKorisnickoMoji.Text && lin[1] == listBoxMojiRecepti.SelectedItem.ToString())
+                {
+                    textBoxBrojSastojaka.Text = lin[2] + " sastojak/ka/aka";
+                    textBoxVrijeme.Text = lin[3];
+                }
+                linija2 = sr2.ReadLine();
+            }
+            sr2.Close();
         }
     }
 }

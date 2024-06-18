@@ -39,19 +39,14 @@
             this.labelSortiraj = new System.Windows.Forms.Label();
             this.radioButtonUzlazno = new System.Windows.Forms.RadioButton();
             this.radioButtonSilazno = new System.Windows.Forms.RadioButton();
-            this.radioButtonBroj = new System.Windows.Forms.RadioButton();
-            this.radioButtonVrijeme = new System.Windows.Forms.RadioButton();
             this.groupBoxRecept = new System.Windows.Forms.GroupBox();
             this.textBoxPostupak6 = new System.Windows.Forms.TextBox();
             this.textBoxSastojci = new System.Windows.Forms.TextBox();
             this.textBoxNaziv = new System.Windows.Forms.TextBox();
-            this.radioButtonSastojak = new System.Windows.Forms.RadioButton();
-            this.groupBoxSastojak = new System.Windows.Forms.GroupBox();
-            this.textBoxSastojakSort = new System.Windows.Forms.TextBox();
-            this.labelSastojakSort = new System.Windows.Forms.Label();
             this.buttonSortiraj = new System.Windows.Forms.Button();
+            this.textBoxBrojSastojaka = new System.Windows.Forms.TextBox();
+            this.textBoxVrijeme = new System.Windows.Forms.TextBox();
             this.groupBoxRecept.SuspendLayout();
-            this.groupBoxSastojak.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelMojiRecepti
@@ -159,32 +154,10 @@
             this.radioButtonSilazno.Text = "Silazno";
             this.radioButtonSilazno.UseVisualStyleBackColor = true;
             // 
-            // radioButtonBroj
-            // 
-            this.radioButtonBroj.AutoSize = true;
-            this.radioButtonBroj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButtonBroj.Location = new System.Drawing.Point(432, 341);
-            this.radioButtonBroj.Name = "radioButtonBroj";
-            this.radioButtonBroj.Size = new System.Drawing.Size(144, 26);
-            this.radioButtonBroj.TabIndex = 10;
-            this.radioButtonBroj.TabStop = true;
-            this.radioButtonBroj.Text = "Broj sastojaka";
-            this.radioButtonBroj.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonVrijeme
-            // 
-            this.radioButtonVrijeme.AutoSize = true;
-            this.radioButtonVrijeme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButtonVrijeme.Location = new System.Drawing.Point(432, 382);
-            this.radioButtonVrijeme.Name = "radioButtonVrijeme";
-            this.radioButtonVrijeme.Size = new System.Drawing.Size(166, 26);
-            this.radioButtonVrijeme.TabIndex = 11;
-            this.radioButtonVrijeme.TabStop = true;
-            this.radioButtonVrijeme.Text = "Vrijeme pripreme";
-            this.radioButtonVrijeme.UseVisualStyleBackColor = true;
-            // 
             // groupBoxRecept
             // 
+            this.groupBoxRecept.Controls.Add(this.textBoxVrijeme);
+            this.groupBoxRecept.Controls.Add(this.textBoxBrojSastojaka);
             this.groupBoxRecept.Controls.Add(this.textBoxPostupak6);
             this.groupBoxRecept.Controls.Add(this.textBoxSastojci);
             this.groupBoxRecept.Controls.Add(this.textBoxNaziv);
@@ -218,53 +191,10 @@
             // textBoxNaziv
             // 
             this.textBoxNaziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxNaziv.Location = new System.Drawing.Point(181, 49);
+            this.textBoxNaziv.Location = new System.Drawing.Point(35, 47);
             this.textBoxNaziv.Name = "textBoxNaziv";
             this.textBoxNaziv.Size = new System.Drawing.Size(178, 28);
             this.textBoxNaziv.TabIndex = 0;
-            // 
-            // radioButtonSastojak
-            // 
-            this.radioButtonSastojak.AutoSize = true;
-            this.radioButtonSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButtonSastojak.Location = new System.Drawing.Point(432, 425);
-            this.radioButtonSastojak.Name = "radioButtonSastojak";
-            this.radioButtonSastojak.Size = new System.Drawing.Size(100, 26);
-            this.radioButtonSastojak.TabIndex = 13;
-            this.radioButtonSastojak.TabStop = true;
-            this.radioButtonSastojak.Text = "Sastojak";
-            this.radioButtonSastojak.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxSastojak
-            // 
-            this.groupBoxSastojak.Controls.Add(this.textBoxSastojakSort);
-            this.groupBoxSastojak.Controls.Add(this.labelSastojakSort);
-            this.groupBoxSastojak.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxSastojak.Location = new System.Drawing.Point(398, 476);
-            this.groupBoxSastojak.Name = "groupBoxSastojak";
-            this.groupBoxSastojak.Size = new System.Drawing.Size(200, 129);
-            this.groupBoxSastojak.TabIndex = 14;
-            this.groupBoxSastojak.TabStop = false;
-            this.groupBoxSastojak.Text = "Sastojak";
-            this.groupBoxSastojak.Visible = false;
-            // 
-            // textBoxSastojakSort
-            // 
-            this.textBoxSastojakSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxSastojakSort.Location = new System.Drawing.Point(22, 76);
-            this.textBoxSastojakSort.Name = "textBoxSastojakSort";
-            this.textBoxSastojakSort.Size = new System.Drawing.Size(100, 28);
-            this.textBoxSastojakSort.TabIndex = 1;
-            // 
-            // labelSastojakSort
-            // 
-            this.labelSastojakSort.AutoSize = true;
-            this.labelSastojakSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSastojakSort.Location = new System.Drawing.Point(18, 35);
-            this.labelSastojakSort.Name = "labelSastojakSort";
-            this.labelSastojakSort.Size = new System.Drawing.Size(132, 22);
-            this.labelSastojakSort.TabIndex = 0;
-            this.labelSastojakSort.Text = "Unesi sastojak:";
             // 
             // buttonSortiraj
             // 
@@ -277,6 +207,22 @@
             this.buttonSortiraj.UseVisualStyleBackColor = true;
             this.buttonSortiraj.Click += new System.EventHandler(this.buttonSortiraj_Click);
             // 
+            // textBoxBrojSastojaka
+            // 
+            this.textBoxBrojSastojaka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxBrojSastojaka.Location = new System.Drawing.Point(250, 47);
+            this.textBoxBrojSastojaka.Name = "textBoxBrojSastojaka";
+            this.textBoxBrojSastojaka.Size = new System.Drawing.Size(100, 28);
+            this.textBoxBrojSastojaka.TabIndex = 3;
+            // 
+            // textBoxVrijeme
+            // 
+            this.textBoxVrijeme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxVrijeme.Location = new System.Drawing.Point(382, 47);
+            this.textBoxVrijeme.Name = "textBoxVrijeme";
+            this.textBoxVrijeme.Size = new System.Drawing.Size(100, 28);
+            this.textBoxVrijeme.TabIndex = 4;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -284,11 +230,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1179, 617);
             this.Controls.Add(this.buttonSortiraj);
-            this.Controls.Add(this.groupBoxSastojak);
-            this.Controls.Add(this.radioButtonSastojak);
             this.Controls.Add(this.groupBoxRecept);
-            this.Controls.Add(this.radioButtonVrijeme);
-            this.Controls.Add(this.radioButtonBroj);
             this.Controls.Add(this.radioButtonSilazno);
             this.Controls.Add(this.radioButtonUzlazno);
             this.Controls.Add(this.labelSortiraj);
@@ -304,8 +246,6 @@
             this.Text = "Form6";
             this.groupBoxRecept.ResumeLayout(false);
             this.groupBoxRecept.PerformLayout();
-            this.groupBoxSastojak.ResumeLayout(false);
-            this.groupBoxSastojak.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,16 +263,12 @@
         private System.Windows.Forms.Label labelSortiraj;
         private System.Windows.Forms.RadioButton radioButtonUzlazno;
         private System.Windows.Forms.RadioButton radioButtonSilazno;
-        private System.Windows.Forms.RadioButton radioButtonBroj;
-        private System.Windows.Forms.RadioButton radioButtonVrijeme;
         private System.Windows.Forms.GroupBox groupBoxRecept;
-        private System.Windows.Forms.RadioButton radioButtonSastojak;
-        private System.Windows.Forms.GroupBox groupBoxSastojak;
-        private System.Windows.Forms.Label labelSastojakSort;
-        private System.Windows.Forms.TextBox textBoxSastojakSort;
         private System.Windows.Forms.TextBox textBoxPostupak6;
         private System.Windows.Forms.TextBox textBoxSastojci;
         private System.Windows.Forms.TextBox textBoxNaziv;
         private System.Windows.Forms.Button buttonSortiraj;
+        private System.Windows.Forms.TextBox textBoxVrijeme;
+        private System.Windows.Forms.TextBox textBoxBrojSastojaka;
     }
 }
